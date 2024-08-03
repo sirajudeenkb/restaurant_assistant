@@ -3,11 +3,16 @@ import wave
 import os
 import numpy as np
 from faster_whisper import WhisperModel
-
+from rag.voice_assistant import AiVoiceAssistant
 
 # Define color constants
 NEON_BLUE = "\033[94m"
+NEON_GREEN = "\033[92m"
 RESET_COLOR = "\033[0m"
+
+NGROK_URL = "https://enhanced-quietly-fowl.ngrok-free.app/"  # Replace with your actual ngrok URL
+
+ai_assistant = AiVoiceAssistant(NGROK_URL)
 
 def is_speech(data, threshold):
     audio_data = np.frombuffer(data, np.int16)
@@ -49,6 +54,7 @@ def main():
     p = pyaudio.PyAudio()
     stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=1024)
     print("Audio stream opened.")
+    print("-"*15)
 
     silence_duration = 2  # Duration in seconds to consider as silence to stop recording
 
@@ -68,6 +74,14 @@ def main():
             transcription = transcribe_chunk(model, chunk_file)
             os.remove(chunk_file)
             print("Customer: " + NEON_BLUE + transcription + RESET_COLOR)
+
+            # Process customer input and get response from AI assistant
+            output = ai_assistant.interact_with_llm(transcription)
+            if output:
+                output = output.lstrip()
+                print("Processing...")
+                print("AI Assistant: " + NEON_GREEN + output + RESET_COLOR)
+                print("-"*15)
 
     except KeyboardInterrupt:
         print("Stopping...")

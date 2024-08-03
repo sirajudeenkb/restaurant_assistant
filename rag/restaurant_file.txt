@@ -1,0 +1,36 @@
+Restaurant Name: Madras Kitchen
+Location: Parrys Corner
+
+
+SouthIndian Menu:
+
+Plain Dosa  - Rupees. 30
+Masala Dosa - Rupees. 50
+Idli        - Rupees. 8
+Puri        - Rupees. 10
+Pongal      - Rupees. 30
+Vada        - Rupees. 10
+
+
+Chinese Menu:
+
+Chicken Fried Rice   - Rupees. 120
+Egg Fried Rice       - Rupees. 100
+Veg Fried Rice       - Rupees. 80
+Chicken Noodles      - Rupees. 120
+Egg Noodles          - Rupees. 100
+Veg Noodles          - Rupees. 80
+Grill Chicken Full   - Rupees. 360
+
+
+Desserts:
+
+Payasam:    - Rupees. 50
+Laddu:      - Rupees. 15 
+
+
+Beverages:
+
+Pepsi        - Rupees. 40
+Slice        - Rupees. 40
+Mountain Dew - Rupees. 40    

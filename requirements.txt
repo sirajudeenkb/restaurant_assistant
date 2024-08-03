@@ -1,3 +1,9 @@
 pyaudio
 numpy
 faster-whisper
+
+qdrant_client
+llama-index-vector-stores-qdrant
+llama-index-llms-ollama
+llama-index-readers-file
+llama-index-embeddings-huggingface
