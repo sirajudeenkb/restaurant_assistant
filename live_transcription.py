@@ -4,6 +4,7 @@ import os
 import numpy as np
 from faster_whisper import WhisperModel
 from rag.voice_assistant import AiVoiceAssistant
+from live_tts import tts_wrapper 
 
 # Define color constants
 NEON_BLUE = "\033[94m"
@@ -80,6 +81,7 @@ def main():
             if output:
                 output = output.lstrip()
                 print("Processing...")
+                tts_wrapper(output)
                 print("AI Assistant: " + NEON_GREEN + output + RESET_COLOR)
                 print("-"*15)
 

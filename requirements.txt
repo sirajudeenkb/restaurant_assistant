@@ -7,3 +7,7 @@ llama-index-vector-stores-qdrant
 llama-index-llms-ollama
 llama-index-readers-file
 llama-index-embeddings-huggingface
+
+# for eleven_labs uncomment this, also you need to install ffmpeg
+elevenlabs
+pydub 
