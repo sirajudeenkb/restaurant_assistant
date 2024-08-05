@@ -11,7 +11,7 @@ NEON_BLUE = "\033[94m"
 NEON_GREEN = "\033[92m"
 RESET_COLOR = "\033[0m"
 
-NGROK_URL = "https://enhanced-quietly-fowl.ngrok-free.app/"  # Replace with your actual ngrok URL
+NGROK_URL = "https://enhanced-quietly-fowl.ngrok-free.app/"  # Replace with your actual ngrok URL, run Ollama on cloud 
 
 ai_assistant = AiVoiceAssistant(NGROK_URL)
 

@@ -8,6 +8,9 @@ llama-index-llms-ollama
 llama-index-readers-file
 llama-index-embeddings-huggingface
 
-# for eleven_labs uncomment this, also you need to install ffmpeg
+# for eleven_labs use this, also you need to install ffmpeg
 elevenlabs
 pydub 
+
+#  for pyttsx3 use this
+pyttsx3
