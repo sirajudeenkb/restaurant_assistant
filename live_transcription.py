@@ -86,7 +86,7 @@ def main():
                 print("-"*15)
 
     except KeyboardInterrupt:
-        print("Stopping...")
+        print("Stopping....")
     
     finally:
         stream.stop_stream()
